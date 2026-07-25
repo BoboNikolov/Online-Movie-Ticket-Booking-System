@@ -17,7 +17,7 @@
         <a class="breadcrumb" href="javascript:history.back()">Back to movie details</a>
         <div class="page-heading">
             <h1>Select available seats</h1>
-            <p>Unavailable seats are disabled. The total updates when seats are selected or removed.</p>
+            <p id="seatInstructions">Unavailable seats are disabled. The total updates when seats are selected or removed.</p>
         </div>
 
         <section class="booking-layout">
@@ -30,7 +30,7 @@
                     <span><i class="legend-box selected"></i> Selected</span>
                     <span><i class="legend-box unavailable"></i> Unavailable</span>
                 </div>
-                <div id="seatGrid" class="seat-grid" aria-label="Cinema seats"></div>
+                <div id="seatGrid" class="seat-grid" aria-label="Cinema seats" aria-describedby="seatInstructions"></div>
             </div>
 
             <aside class="summary-card">
