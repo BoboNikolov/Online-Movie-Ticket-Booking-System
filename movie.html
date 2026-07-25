@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Movie details and showtime selection">
+    <title>Movie Details | Echo Cinema</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="index.html">Echo <span>Cinema</span></a>
+        <div class="demo-user">Prototype mode — signed in as Demo User</div>
+    </header>
+
+    <main>
+        <a class="breadcrumb" href="index.html">Back to movie catalogue</a>
+
+        <section class="details-layout">
+            <div class="panel">
+                <div id="moviePoster" class="poster details-poster" style="--poster-gradient: linear-gradient(135deg, #172554, #c2410c);">
+                    <span>Movie details</span>
+                </div>
+            </div>
+
+            <div class="panel">
+                <div class="page-heading">
+                    <h1 id="movieTitle">Movie title</h1>
+                    <p id="movieDescription"></p>
+                </div>
+
+                <div class="detail-list">
+                    <div class="detail-item"><span>Genre</span><strong id="movieGenre"></strong></div>
+                    <div class="detail-item"><span>Duration</span><strong id="movieDuration"></strong></div>
+                    <div class="detail-item"><span>Rating</span><strong id="movieRating"></strong></div>
+                    <div class="detail-item"><span>Certificate</span><strong id="movieCertificate"></strong></div>
+                </div>
+
+                <h2>Select a showtime</h2>
+                <div id="showtimeList" class="showtimes"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>Software Engineering CA2 Prototype — Bobo Nikolov — Student ID 24109479</footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/details.js"></script>
+</body>
+</html>
