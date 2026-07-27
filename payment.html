@@ -26,10 +26,10 @@
                 <p class="muted">Approved card: 4242 4242 4242 4242. Declined card: 4111 1111 1111 0000.</p>
                 <div class="form-grid">
                     <label>Name on card<input id="customerName" type="text" autocomplete="off" placeholder="Demo User" required></label>
-                    <label>Test card number<input id="cardNumber" type="text" inputmode="numeric" autocomplete="off" placeholder="4242 4242 4242 4242" required></label>
+                    <label>Test card number<input id="cardNumber" type="text" inputmode="numeric" autocomplete="off" maxlength="19" placeholder="4242 4242 4242 4242" required></label>
                     <div class="form-row">
-                        <label>Expiry<input id="expiry" type="text" autocomplete="off" placeholder="12/29" required></label>
-                        <label>Security code<input id="securityCode" type="text" inputmode="numeric" autocomplete="off" placeholder="123" required></label>
+                        <label>Expiry<input id="expiry" type="text" autocomplete="off" maxlength="5" placeholder="12/29" required></label>
+                        <label>Security code<input id="securityCode" type="text" inputmode="numeric" autocomplete="off" maxlength="3" placeholder="123" required></label>
                     </div>
                 </div>
                 <button class="button" type="submit">Pay and confirm booking</button>
