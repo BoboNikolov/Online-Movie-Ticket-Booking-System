@@ -29,6 +29,6 @@ services:
 databases:
   - name: echo-cinema-db
     region: frankfurt
-    plan: basic-256gb
+    plan: basic-256mb
     databaseName: echo_cinema
     user: echo_cinema
