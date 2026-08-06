@@ -3,7 +3,7 @@ services:
     name: echo-cinema
     runtime: node
     region: frankfurt
-    plan: basic-256mb
+    plan: starter
     buildCommand: npm install && npm run db:setup
     startCommand: npm start
     healthCheckPath: /api/health
@@ -29,6 +29,6 @@ services:
 databases:
   - name: echo-cinema-db
     region: frankfurt
-    plan: free
+    plan: basic-256gb
     databaseName: echo_cinema
     user: echo_cinema
