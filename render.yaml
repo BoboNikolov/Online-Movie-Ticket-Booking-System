@@ -3,7 +3,7 @@ services:
     name: echo-cinema
     runtime: node
     region: frankfurt
-    plan: free
+    plan: basic-256mb
     buildCommand: npm install && npm run db:setup
     startCommand: npm start
     healthCheckPath: /api/health
